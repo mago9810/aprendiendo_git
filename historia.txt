@@ -1,0 +1,11 @@
+Nombre: Diego Gonzalez
+Edad: 45
+sexo: Masculino
+fecha naciemiento: 9 abril 1977
+estado civil: casado
+Nombre de la esposa: Paola Bermudez
+numero de hijos: 2
+Nombre del hijo 1: Jeronimo Gonzalez
+Nombre del hijo 2: Cristobal Gonz<alez
+prueba saber pro: sobresaliente
+
