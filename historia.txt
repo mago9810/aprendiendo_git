@@ -8,5 +8,5 @@ numero de hijos: 2
 Nombre del hijo 1: Jeronimo Gonzalez
 Nombre del hijo 2: Cristobal Gonz<alez
 prueba saber pro: impresionante
-
+gustos: me encanta la programacion y el ping-pong
 
