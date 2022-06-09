@@ -48,3 +48,9 @@ tengo hecho el arreglo, como lo uno a la rama principal (master)?
 se hace con un "merge" que traduce "Unir", lo que hace es unir lo desarrollado en la rama hotfix con la rama master
 
 para esto primero pido una copia de la rama master, le uno la rama hotfix y luego la uno a la master
+
+git branch cabecera  para crear una rama 
+git show para verificar que se creo la rama 
+commit 116a6869e4b791bfa367da4b265fcf8ecc8b3a27 (HEAD -> master, cabecera) indica que:
+la cabecera le esta apuntando al master y a la cabecera
+le damos la letra "q" y podemos ver que aunque el HEAD esta trabajando con la 
