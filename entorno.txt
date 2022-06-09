@@ -53,4 +53,32 @@ git branch cabecera  para crear una rama
 git show para verificar que se creo la rama 
 commit 116a6869e4b791bfa367da4b265fcf8ecc8b3a27 (HEAD -> master, cabecera) indica que:
 la cabecera le esta apuntando al master y a la cabecera
-le damos la letra "q" y podemos ver que aunque el HEAD esta trabajando con la 
+le damos la letra "q" y podemos ver que aunque el HEAD esta apuntando a los dos brazos, aun sigue trabajando en master.
+
+Existe un comando que se llama git branch y me va a decir:
+
+1- que ramas hay
+2- en cual rama estoy parado
+
+ahora para cambiar al brazo cabecera:
+
+git checkout cabecera    me envia inmediatamente a el brazo cabecera
+
+en este momento, al cambiar al brazo cabecera, me traigo una copia del master, al cambiar de brazo con checkout sin hacer un git commit -am "blalalalal" 
+puedo perderlo todo lo hecho en cabecera, por tando debe hacerce por obligacion
+
+despues de hacer lo entonces 
+
+para unir las dos ramas, master(como principal) y cabeceera:
+1- me ubico en master (o la que vaya a ser la principal)
+2- doy el comando      git merge master      y listo ocurrio el merge
+
+el master tambien puede hacerce desde la rama cabecera, es mas es una buena practica si deside continuar trabajando desde esa rama para que 
+se cuente con los cambios mas recientes del codigo
+
+mañana seguimos con github, la plataforma en internet
+
+
+
+
+
