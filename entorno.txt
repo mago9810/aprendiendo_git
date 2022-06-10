@@ -76,7 +76,63 @@ para unir las dos ramas, master(como principal) y cabeceera:
 el master tambien puede hacerce desde la rama cabecera, es mas es una buena practica si deside continuar trabajando desde esa rama para que 
 se cuente con los cambios mas recientes del codigo
 
-mañana seguimos con github, la plataforma en internet
+github
+
+github es una plataforma de internet en la que se va a guardar nuestro codigo y desde la cual se va a compartir con otros nuestros desarrollos
+
+Descargamos github
+luego nos logueamos
+luego creamos un nuevo repositorio  (margen derecha simbilo + y new repository)
+se escribe el nombre del proyecto 
+escribimos la descripcion del proyecto
+inicializamos el repositorio con un readme con la descripcion de nuestro proyecto
+damos la opcion de gitignore 
+tipo de licencia none
+luego de esto tenemos una direccion url de nuestro repositorio 
+para nuestro caso:
+
+https://github.com/mago9810/aprendiendo_git
+
+al leer el readme podemos ver:
+row me muetra el codigo plano de nuestro archivo
+blame me muetra el autor del texto o quien lo subio al repositorio
+history me muestra la historia del archivo, lo mismo que hacer un git log 
+
+
+para enlazar el git local con el github:
+
+vamos a code -> clone -> copiamos el https 
+https://github.com/mago9810/aprendiendo_git.git
+
+vamos a git local
+nos aceguramos que estamnos en nustra carpeta repositorio local en la rama master
+le decimos a git que vamos a agregar un origen remoto de nuestros archivos 
+
+git remote add origin https://github.com/mago9810/aprendiendo_git.git
+
+git remote
+nos muestra el origen 
+
+git remote -v    sea verbal
+
+nos dice que:
+
+tenemos un origin para hacer fetch para traernos cosas
+y que tenermos un  origin para hace push para enviar cosas
+
+para iniciar el trabajo tenemos que traer los cambios del origin al master 
+para esto ponemos:
+
+git pull origin main --allow-unrelated-histories 
+
+ahora que ya tragimos todo que esta en el repositorio de github, ahora vamos a enviar nuestros archivos a internet con:
+
+git push origin master    aqui si tenemos que poner master, porque porque estamos en local
+
+
+
+
+
 
 
 
