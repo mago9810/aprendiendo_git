@@ -1,0 +1,84 @@
+Es decir primero 
+Creo la carpeta mkdir
+Lo defino como repositorio con git init 
+Luego el archivo touch
+Lo edito con code 
+Lo subo con add 
+Y lo guardo con commit (Cada comot es una version guardada en el master, es decir que tendras vr1 vr2 dependiendo de la cantidad de commits)
+Veo el estado con status
+Ver el contenido del archivo con cat nombre_archivo.txt
+Hago cambio en el archivo con code nombre-archivo.txt
+Verifico el estado con 
+Git status 
+
+Lo subo con add . Para subir todos los cambios en la carpeta, porque . se refiere a la carpeta de trabajo 
+
+lo guardo el commit con nuevo mensaje. (Si no hice el comentario me va a enviar a Vin, (Para ingresar el texto oprimo Esc + i) 
+allí escribo el mensaje sin comillas y para salir, Esc + shift + zz)
+
+Git clear para limpiar el bash
+Git log nombre_archivo.txt
+git checkot nombre_commit nombre_archivo.txt    me permite moverme entre las versiones modifiralas o solo verlas y retornar a la version mas reciente
+para ver el historial de los cambios en el archivo
+Git show nombre-archivo.txt me muestra un textos coloreado que compara los commits y resalta las variaciones
+git diff me permite comparar dos commits y ver sus diferencias, solo damos el comando git diff mas los numeros de los commit y enter
+
+git reset head saca los archivos del staging y no los envia en el proximo commit hasta que sean nuevamente ingresados o trakeados o rastreados con un git add
+git reset nombre del commit y --hard o --soft 
+si ponemos hard, regresamos al pasado y ahora nuestro archivo en el repositorio y de trabajo sera el que pusimos en el commit mas antiguo
+si ponemos soft, el cambio no se hara en el repositorio, solo se mantendra en el stage
+
+por otro lado:
+
+git rm elimina el archivo de git completamente
+git rm --cached   elimima el seguimiento de git pero lo deja en la disco duro
+gti rm --force    los elimina de todo lado git y disco duro
+
+aqui tenemos una explicacion general:
+
+master es la rama principal en donde se guardan las ramas principales, es decir donde se guarda el archivo principal
+podemos crear ramas en donde puedo hacer pruebas o hacer desarrollos que no queden registrados en el master
+en este caso lo llamaremos experimentos
+y crearemos una para corregir errores en el codigo llamado hotfix 
+
+ahora: 
+
+tengo hecho el arreglo, como lo uno a la rama principal (master)?
+
+se hace con un "merge" que traduce "Unir", lo que hace es unir lo desarrollado en la rama hotfix con la rama master
+
+para esto primero pido una copia de la rama master, le uno la rama hotfix y luego la uno a la master
+
+git branch cabecera  para crear una rama 
+git show para verificar que se creo la rama 
+commit 116a6869e4b791bfa367da4b265fcf8ecc8b3a27 (HEAD -> master, cabecera) indica que:
+la cabecera le esta apuntando al master y a la cabecera
+le damos la letra "q" y podemos ver que aunque el HEAD esta apuntando a los dos brazos, aun sigue trabajando en master.
+
+Existe un comando que se llama git branch y me va a decir:
+
+1- que ramas hay
+2- en cual rama estoy parado
+
+ahora para cambiar al brazo cabecera:
+
+git checkout cabecera    me envia inmediatamente a el brazo cabecera
+
+en este momento, al cambiar al brazo cabecera, me traigo una copia del master, al cambiar de brazo con checkout sin hacer un git commit -am "blalalalal" 
+puedo perderlo todo lo hecho en cabecera, por tando debe hacerce por obligacion
+
+despues de hacer lo entonces 
+
+para unir las dos ramas, master(como principal) y cabeceera:
+1- me ubico en master (o la que vaya a ser la principal)
+2- doy el comando      git merge master      y listo ocurrio el merge
+
+el master tambien puede hacerce desde la rama cabecera, es mas es una buena practica si deside continuar trabajando desde esa rama para que 
+se cuente con los cambios mas recientes del codigo
+
+mañana seguimos con github, la plataforma en internet
+
+
+
+
+
