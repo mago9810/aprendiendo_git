@@ -128,6 +128,63 @@ git pull origin main --allow-unrelated-histories
 ahora que ya tragimos todo que esta en el repositorio de github, ahora vamos a enviar nuestros archivos a internet con:
 
 git push origin master    aqui si tenemos que poner master, porque porque estamos en local
+git pull origin main      aqui ponemos main porque estamos trayendo de internet al repositorio local, y en github no se dice refiere a master sino a main
+
+crear llaves publicas y privadas en git y github
+
+
+por  hacer crear las llaves privadas y publicas de git y github 
+============================================================
+
+
+crear la llave 
+
+$ ssh-keygen -t rsa -b 4096 -C "mago9810@gmail.com"
+
+me indica donde se guardo
+
+hay que tener clara la clave de seguridad para poder usar la llave privadas
+si la pierde o la olvida hay que crear una nueva pero tendria  que cambiarla de donse sea usada
+
+añado la llave de seguridad a git con:
+
+ssh-add ~/.ssh/id_rsa
+
+ahora para conectar a mi github de manera segura con mi llave publica:
+
+1- abro mi llave publica con visual studio
+2- copio la llave publica
+3- voy a github
+4- en el perfil de github 
+5- arriba a la izquierda busco el usuario con la flechita para abajo y busco settings
+6- en settings busco SSH and GPG keys
+7- busco SSH keys
+8- New SSh key
+9- title: ingresar un nombre claro a que comutador esta asociada esta clave. Por cada computador con accesos a este repositorio debe existir una clave
+10- key: pego la llave copiada.  las llaves normalmente empiezan con ssh-rsa
+11-  add SSH key 
+
+
+ahora ya esta integrado nuestro computador con git con github
+
+lo siguiente es enlazar el proyecto en repositorio local con el repositorio en github
+
+para esto usamos el comando:
+
+git remote -v   para ver la direccion actual a donde van dirigidos los cambios
+
+luego:
+
+en github, voy al repositorio de nuestro proyecto
+voy a donde dice code -> SSH y copiamos la direccion que aparece alli
+
+luego en el git, en local ponemos el siguiente codigo:
+
+git remote set-url origin git@github.com:mago9810/aprendiendo_git.git   para actualizar la direccion 
+
+
+
+
 
 
 
