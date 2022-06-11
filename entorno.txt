@@ -182,6 +182,34 @@ luego en el git, en local ponemos el siguiente codigo:
 
 git remote set-url origin git@github.com:mago9810/aprendiendo_git.git   para actualizar la direccion 
 
+ahora hacemos la prueba con una actualizacion de archivos y enviamos 
+
+git pull
+
+al teclear este comando, el programa me pregunta sis estoy seguro, al darle yes, me pregunta acerca del brazo que voy a trabajar 
+y me dice que el orden del pull es:
+
+git pull <remote> <branch>
+
+para hacer el pull:
+
+git pull origin master
+ 
+para traer los archivos presentes en el repositorio de github
+
+ahora para hacemos los commits necesarios del codigo actualizado y luego:
+
+git push origin master
+
+y listo, enviados los cambio al repositorio en github
+
+
+es una buena practica es hacer git pull entre envios de informacion al repositorio pues no sabemos en que momento se hacen cambios en github Y
+pueden generar conflictos 
+
+
+
+
 
 
 
